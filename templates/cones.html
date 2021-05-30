@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block custombody %}
+
+
+
+
+  <div class="container my-4">
+<h1 class="my-2 text-center" > ChocoMoco Cones</h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/aa.jpg" class="d-block w-100" style="height:300px" alt="...">
+            <div class="card-body">
+              <p class="card-text"> Vanilla </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/bb.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Butterscotch </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/6.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Kesar Pista </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/ee.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Choco </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/8.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Mini Butterscotch </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/dd.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Mini Vanilla </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      {% endblock %}
+      {% block customscript %}
+      <script>
+      $('.active').removeClass('active');
+      $('#navbarDropdown').addClass('active');
+      $('#cones-nav-link').addClass('active');
+    </script>
+    {% endblock %}

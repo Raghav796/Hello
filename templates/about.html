@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block custombody %}
+<div class="container my-4">
+  <div class="row featurette d-flex justify-content-center align-items-center ">
+                   <div class="col-md-7">
+          <h1 class="featurette-heading">We started ChocoMoco Ice Creams in 2021.</h1>
+          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+              prose here.</p>
+      </div>
+              <div class="col-md-5 ">
+               <img class="img-fluid" src="/static/img/about4.jpg" style="width: 600px; height: 400px;" alt="">
+      </div>
+  </div>
+  <div class="row featurette d-flex justify-content-center align-items-center ">
+      <div class="col-md-7 order-md-2 ">
+          <h1 class="featurette-heading">Best Ice Creams seller in Pathankot.  </h1>
+          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+              prose here.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+          <img class="img-fluid" src="/static/img/about1.jpg" style="width: 600px; height: 400px;" alt="">
+      </div>
+  </div>
+  <div class="row featurette d-flex justify-content-center align-items-center ">
+      <div class="col-md-7">
+          <h1 class="featurette-heading">Always serves best. </h1>
+                 
+          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+              prose here.</p>
+      </div>
+      <div class="col-md-5">
+          <img class="img-fluid" src="/static/img/about3.jpg" style="width: 600px; height: 400px;" alt="">
+      </div>
+  </div>
+</div>
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>© 2021–2022 ChocoMoco Ice Creams, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+{% endblock %}
+
+{% block customscript %}
+  <script>
+  $('.active').removeClass('active');
+  $('#about-nav-link').addClass('active');
+</script>
+{% endblock %}

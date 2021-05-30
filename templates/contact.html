@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block custombody %}
+
+   {% if messages %}
+   {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+      {{ message }}
+      
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  <div class="container-fluid px-0 mb-3">
+    <img src="/static/img/01.jpg" class="d-block w-100" style="height:214px" alt="...">
+  </div>
+  <div class="container ">
+    <h1 class="text-center">Contact Us</h1>
+    <form method="post" action="/contact">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+      </div>
+      <button class="btn btn-dark" type="submit">Submit</button>
+    </form>
+
+  </div>
+
+ 
+{% endblock %}
+
+{% block customscript %}
+  <script>
+    $('.active').removeClass('active');
+    $('#contact-nav-link').addClass('active');
+  </script>
+  {% endblock %}

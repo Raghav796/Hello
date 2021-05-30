@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block custombody %}
+
+
+
+
+  <div class="container my-4">
+<h1 class="my-2 text-center" > ChocoMoco Tubs</h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/aaa.jpg" class="d-block w-100" style="height:300px" alt="...">
+            <div class="card-body">
+              <p class="card-text"> Vanilla </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/ddd.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Butterscotch </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/topicecream.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Kesar Pista </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/fff.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Choco </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/eee.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Strawberry </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/img/ffffff.jpg" class="d-block w-100" style="height:300px" alt="...">
+
+            <div class="card-body">
+              <p class="card-text"> Tutti FFuitti </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      {% endblock %}
+      {% block customscript %}
+      <script>
+      $('.active').removeClass('active');
+      $('#navbarDropdown').addClass('active');
+      $('#tubs-nav-link').addClass('active');
+    </script>
+    {% endblock %}
